@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".app_ui.activities.AppActivity"
+    tools:ignore="ContentDescription">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/box_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <com.github.pavlospt.CircleView
+            android:id="@+id/bullet_view"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp"
+            app:cv_backgroundColorValue="@color/black"
+            app:cv_fillRadius="0"
+            app:cv_strokeColorValue="@color/black"
+            app:cv_strokeWidthSize="0"
+            app:cv_subtitleText=""
+            app:cv_titleText="" />
+
+        <TextView
+            android:id="@+id/banner_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/bullet_view"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,133 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <dimen name="corner_radius_one">2dp</dimen>
+    <dimen name="corner_radius_two">4dp</dimen>
+    <dimen name="corner_radius_three">8dp</dimen>
+    <dimen name="corner_radius_five">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- font sizes -->
+    <dimen name="font_larger">22sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_large_plus">20sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_normal_plus">15sp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+    <dimen name="font_medium_plus">17sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_very_small">10sp</dimen>
+    <dimen name="font_very_very_small">8sp</dimen>
+    <dimen name="font_small_plus">13sp</dimen>
+    <dimen name="font_snack_bar">16sp</dimen>
+
+    <dimen name="room_count_ht">28dp</dimen>
+    <dimen name="room_count_wd">34dp</dimen>
+
+    <dimen name="room_count_wd_main">30dp</dimen>
+
+    <dimen name="view_height">14dp</dimen>
+
+    <dimen name="font_hotel_search_place">30sp</dimen>
+    <dimen name="font_hello">26sp</dimen>
+    <dimen name="font_hotel_search_weather">22sp</dimen>
+    <dimen name="icon_weather">24dp</dimen>
+
+    <!-- typical spacing between two views -->
+
+    <!-- typical padding of views -->
+    <dimen name="padding_3_dp">3dp</dimen>
+    <dimen name="padding_very_small">4dp</dimen>
+    <dimen name="padding_very_small_plus">6dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_small_plus">10dp</dimen>
+    <dimen name="padding_normal">12dp</dimen>
+    <dimen name="padding_normal_plus">14dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_large_plus">18dp</dimen>
+    <dimen name="padding_large_20">20dp</dimen>
+    <dimen name="padding_larger">24dp</dimen>
+
+    <!-- typical margin of views -->
+    <dimen name="margin_smallest">1dp</dimen>
+    <dimen name="margin_very_small">4dp</dimen>
+    <dimen name="margin_very_small_plus">6dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_small_plus">10dp</dimen>
+    <dimen name="margin_star">-8dp</dimen>
+    <dimen name="margin_star_two">-16dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_larger">24dp</dimen>
+    <dimen name="margin_welcome">48dp</dimen>
+    <dimen name="select_room_button">38dp</dimen>
+    <dimen name="faq_dimen">24dp</dimen>
+
+    <dimen name="logo_dimen">120dp</dimen>
+    <dimen name="logo_text_height">40dp</dimen>
+    <dimen name="logo_margin_bottom">64dp</dimen>
+    <dimen name="rb_dimen">20dp</dimen>
+    <dimen name="rb_save_small_dimen">15dp</dimen>
+
+
+    <dimen name="margin_form">32dp</dimen>
+    <dimen name="elevation_one">2dp</dimen>
+    <dimen name="bed_icon_small">14dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="hotel_search_image_height">200dp</dimen>
+    <dimen name="discover_map_height">200dp</dimen>
+    <dimen name="counter_box_height">42dp</dimen>
+    <dimen name="counter_box_height_one">34dp</dimen>
+    <dimen name="popular_height">140dp</dimen>
+    <dimen name="hotels_height">150dp</dimen>
+    <dimen name="hotels_map_height">100dp</dimen>
+    <dimen name="popular_city_height">80dp</dimen>
+    <dimen name="nearby_height">140dp</dimen>
+    <dimen name="popular_city_height_wt">95dp</dimen>
+    <dimen name="search_buttion_height">46dp</dimen>
+    <dimen name="sort_filter_icon_height">26dp</dimen>
+
+    <dimen name="dot">12dp</dimen>
+
+    <dimen name="profile_image_height">80dp</dimen>
+    <dimen name="profile_image_height_out">130dp</dimen>
+    <dimen name="booking_row_height">90dp</dimen>
+    <dimen name="hotel_detail_image_height">240dp</dimen>
+    <dimen name="hotel_detail_image_height_two">220dp</dimen>
+    <dimen name="profile_rating">36dp</dimen>
+    <dimen name="service_item_medium">20dp</dimen>
+    <dimen name="service_item_small">18dp</dimen>
+    <dimen name="apply_button">42dp</dimen>
+    <dimen name="text_area_height">120dp</dimen>
+    <dimen name="notification">32dp</dimen>
+    <dimen name="contact_icon">24dp</dimen>
+    <dimen name="arrow_next">20dp</dimen>
+    <dimen name="info_small_icon">15dp</dimen>
+    <dimen name="booking_tab_height">60dp</dimen>
+    <dimen name="button_height">36dp</dimen>
+    <dimen name="single_view_height">50dp</dimen>
+    <dimen name="list_image_height">36dp</dimen>
+    <dimen name="settings_icon_item">30dp</dimen>
+    <dimen name="list_image_bg_height">45dp</dimen>
+    <dimen name="serach_view_height">45dp</dimen>
+    <dimen name="account_image_bg">80dp</dimen>
+
+    <dimen name="stroke_width">1dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">10sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">11sp</dimen>
+    <dimen name="text_area">100dp</dimen>
+    <dimen name="line_space_extra">1.5dp</dimen>
+
+
+    <dimen name="avatar_size">40dp</dimen>
+
+</resources>

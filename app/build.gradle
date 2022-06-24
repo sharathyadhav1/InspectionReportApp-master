@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'kotlin-android'
+apply plugin: 'checkstyle'
+
+def dbflow_version = "4.2.4"
+def sqlcipher_version = '4.4.2'
+
+
+android {
+    compileSdkVersion PROJECT_SDK_VERSION
+
+    defaultConfig {
+
+        applicationId APP_PACKAGE_NAME
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion PROJECT_SDK_VERSION
+        versionCode APP_VERSION_CODE
+        versionName APP_VERSION_NAME
+
+        multiDexEnabled true
+        renderscriptSupportModeEnabled true    // Enable RS support
+        vectorDrawables.useSupportLibrary = true
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+        buildFeatures {
+
+            dataBinding = true
+            viewBinding = true
+        }
+
+        bundle {
+
+            language {
+                enableSplit = false
+            }
+        }
+    }
+
+    dexOptions {
+
+        javaMaxHeapSize "4g"
+        jumboMode true
+    }
+
+    configurations {
+        cleanedAnnotations
+        compile.exclude group: 'org.jetbrains' , module:'annotations'
+
+    }
+
+    signingConfigs {
+
+        release {
+
+            storeFile file("dolabs.jks")
+            storePassword 'dolabs@123'
+            keyAlias 'dolabs'
+            keyPassword 'dolabs@123'
+            v2SigningEnabled true
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+        disable 'InvalidPackage', 'ExtraTranslation', 'MissingTranslation', 'InvalidPackage', 'MissingQuantity', 'AppCompatResource'
+    }
+    namespace APP_PACKAGE_NAME
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'com.baoyz.actionsheet:library:1.1.7'
+    //Database dependencies
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-sqlcipher:${dbflow_version}"
+    implementation "net.zetetic:android-database-sqlcipher:${sqlcipher_version}@aar"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-kotlinextensions:${dbflow_version}@aar"
+    implementation 'io.requery:sqlite-android:3.27.2'
+    implementation 'androidx.sqlite:sqlite:2.2.0'
+
+    //essentials
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+
+    implementation 'com.androidadvance:topsnackbar:1.1.1'
+    implementation 'com.github.zerobranch:SwipeLayout:1.3.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    implementation 'dev.b3nedikt.applocale:applocale:2.0.3'
+    implementation 'dev.b3nedikt.viewpump:viewpump:4.0.3'
+    implementation 'dev.b3nedikt.reword:reword:3.1.0'
+    implementation 'com.github.krokyze:ucropnedit:2.2.5'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'com.google.zxing:core:3.3.3' // Kept it in this version to support android 6 OS
+    implementation 'com.google.zxing:android-integration:3.3.0'
+    implementation 'org.aviran.cookiebar2:cookiebar2:1.1.4'
+    implementation 'com.github.pavlospt:circleview:1.3'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'joda-time:joda-time:2.10.9'
+    implementation 'com.github.Fazalcs13:SquareImageView:1.0.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    // Dependency for Google Sign-In
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+
+
+}

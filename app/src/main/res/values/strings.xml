@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">InspectionReportApp</string>
+
+    <string name="server_not_reachable">Server not reachable</string>
+    <string name="server_connection_error">Cannot connect to server!</string>
+    <string name="no_internet_error">You do not have internet access</string>
+    <string name="error_while_processing">Error while processing</string>
+    <string name="no_data_found">No data found</string>
+
+    <!--    Old App String ned to delete-->
+    <string name="please_wait">Please wait</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="gallery">Gallery</string>
+    <string name="done">Done</string>
+
+
+    <string name="rectangle">Rectangle</string>
+    <string name="select_avatar">Select avatar</string>
+    <string name="error_file_not_found">File not found</string>
+    <string name="error_unable_to_create_temporary_file">Unable to create temporary file</string>
+    <string name="error_io_exception">General I/O error. Maybe you ran out of storage space?</string>
+    <string name="error_not_an_image_file">The file you selected is not an image</string>
+    <string name="error_compressing_image">Error while converting the image file</string>
+    <string name="error_out_of_memory">Out of memory. Image is too large</string>
+    <string name="error_security_exception_during_image_copy">The app you used to select this image did not provide us with enough permissions to read the file.\n\n<small>Use a different file manager to choose an image</small></string>
+
+
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix">ago</string>
+    <string name="time_ago_seconds">%d sec</string>
+    <string name="time_ago_minute"> 1 min</string>
+    <string name="time_ago_minutes">%d min</string>
+    <string name="time_ago_hour">1 hr</string>
+    <string name="time_ago_hours">%d hrs</string>
+    <string name="time_ago_day">a day</string>
+    <string name="time_ago_days">%d days</string>
+    <string name="time_ago_month"> a month</string>
+    <string name="time_ago_months">%d months</string>
+    <string name="time_ago_year"> a year</string>
+    <string name="time_ago_years">%d years</string>
+    <string name="un_authorized">Un Authorized</string>
+
+
+    <string name="login_for_admin">Login for admin</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="plaes_enter_username_password">Please enter username and password</string>
+    <string name="invalid_credentials_please_try_again">Invalid credentials please try again</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_logout">Are you sure that you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+</resources>
